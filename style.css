@@ -162,7 +162,6 @@ main {
 
     .order-summary h1 {
         text-align: center;
-        /* font-size: 1px; */
         font-size: 20px;
         font-weight: 900;
     }
@@ -201,8 +200,6 @@ main {
 
    .order-summary button {
        width: 90%;
-       /* height: 20%; */
-       /* font-size: 1px; */
        padding: 15px 16px;
        font-size: 13px;
    }
@@ -211,8 +208,5 @@ main {
        padding-top: 20px;
    }
 
-   /* body {
-       max-height: 100%;
-   } */
 
 }
