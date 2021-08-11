@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: url('./images/pattern-background-desktop.svg') no-repeat;
+    background-color:  hsl(225, 100%, 94%);
+    max-height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 5.9rem;
+    margin-bottom: 5.9rem;
+    /* transform: translatex(10.5%); */
+}
+
+.order-summary {
+    width: 28.25rem;
+    border: 1px solid white;
+    background: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.music img{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid hsl(223, 47%, 23%);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.order-summary h1 {
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-top: 2rem;
+}
+
+.order-summary > p {
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.5rem;
+    color:hsl(223, 47%, 23%);
+    opacity: 0.7;
+    font-weight: normal;
+} 
+
+.cost {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;    
+    border: 1px solid black;
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+    padding: 1rem 2rem;
+    gap: 5.3rem;
+    background: hsl(225, 100%, 98%);
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.cost .side-1 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.annual-plan h4 {
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+.annual-plan p {
+    color: hsl(224, 23%, 55%);
+}
+
+.side-2 a {
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+.side-2 a:hover {
+    color: hsl(245, 75%, 52%);
+    opacity: 0.7;
+}
+
+.order-summary button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0.8rem 7.5rem;
+    color: white;
+    background: hsl(245, 75%, 52%);
+    border: 1px solid hsl(223, 47%, 23%);
+    font-family: inherit;
+    border-radius: 0.7rem;
+    box-shadow: 0 1.3rem hsl(225, 100%, 98%);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.order-summary button:hover {
+   background: hsl(245, 75%, 52%);
+   border: none;
+   opacity: 0.6;
+}
+
+.order-summary #cancel {
+    color: hsl(223, 47%, 23%);
+    font-weight: bolder;
+    font-family: inherit;
+    padding-top: 0.55rem;
+    padding-bottom: 2.9rem;
+    cursor: pointer;
+}
+
+.attribution {
+     font-size: 13px;
+     text-align: center;
+}
+
+
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+   
+    .container {
+        max-width: 100vw;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .music img {
+        width: 90%;
+        margin-left: 1.1rem;
+    }
+
+    .order-summary {
+        width: 90%;
+        margin-left: 1.1rem;
+    }
+
+    .order-summary h1 {
+        text-align: center;
+        /* font-size: 1px; */
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .order-summary > p {
+         font-size: 1px;
+         font-size: 14px;
+         text-align: center;
+    }
+
+    .cost {
+        width: 90%;
+        margin-left: inherit;
+    }
+
+    .cost .side-1 {
+        gap: 1.2rem;
+    }
+
+    .side-1 img {
+        width: 44%;
+        margin-left: -0.5rem;
+    }
+
+    .annual-plan h4 {
+        font-size: 14px;
+    }
+
+    .annual-plan p {
+        font-size: 15px;
+    } 
+
+    .side-2 a {
+        font-size: 13px;
+    }
+
+   .order-summary button {
+       width: 90%;
+       /* height: 20%; */
+       /* font-size: 1px; */
+       padding: 15px 16px;
+       font-size: 13px;
+   }
+
+   .order-summary #cancel {
+       padding-top: 20px;
+   }
+
+   /* body {
+       max-height: 100%;
+   } */
+
+}
